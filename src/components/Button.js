@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = (props) => (
-  <button type="button" >
-    {props.name}
+const Button = ({ name }) => (
+  <button type="button">
+    {name}
   </button>
 );
 
 Button.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
 };
 
 Button.defaultProps = {
-  name: null
+  name: null,
 };
 
 export default Button;

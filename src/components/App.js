@@ -1,13 +1,14 @@
+import React from 'react';
 
-import '../styles/app.sass';
 import Display from './Display';
-import ButtonPanel from './ButtonPanel'
+import ButtonPanel from './ButtonPanel';
+
 function App() {
   return (
     <div className="App">
       <div className="calculator">
-        <Display/>
-        <ButtonPanel/>
+        <Display />
+        <ButtonPanel />
       </div>
     </div>
   );
