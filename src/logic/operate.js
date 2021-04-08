@@ -1,9 +1,9 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  if (typeof numberOne !== 'number' || typeof numberTwo !== 'number' || !operation) return '0';
-  const nOne = Big(Number(numberOne));
-  const nTwo = Big(Number(numberTwo));
+  if (!numberOne || !numberTwo || !operation) return '0';
+  const nOne = typeof number1 !== 'number' ? Big(Number(numberOne)) : Big(numberOne);
+  const nTwo = typeof number2 !== 'number' ? Big(Number(numberTwo)) : Big(numberTwo);
   let result = 0;
 
   switch (operation) {
