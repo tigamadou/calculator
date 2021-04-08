@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
-// eslint-disable-next-line no-unused-vars
 import Calculate from '../logic/calculate';
 
 class App extends Component {
@@ -22,10 +21,10 @@ class App extends Component {
   }
 
   render() {
-    const { total } = this.state;
+    const { total, next } = this.state;
     return (
       <>
-        <Display result={total} />
+        <Display result={(next && next.toString()) || (total && total.toString()) || '0'} />
         <ButtonPanel handleClick={this.handleClick} />
       </>
     );
