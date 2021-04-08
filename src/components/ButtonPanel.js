@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
@@ -14,8 +15,15 @@ const ButtonPanel = ({ handleClick }) => (
   <div className="panel">
     {buttonGroups.map((group, index) => (
 
-      <div className="panel-group" key={`group-${(index + 1)}`}>
-        {group.map((button) => <Button name={button} handleClick={handleClick} key={button} />)}
+      <div className="row" key={`row-${(index + 1)}`}>
+        {group.map((button, yindex) => (
+          (
+            (yindex === (group.length - 1))
+              ? <Button name={button} handleClick={handleClick} key={button} />
+              : <Button name={button} handleClick={handleClick} key={button} color wide={button === '0'} />)
+
+        ))}
+
       </div>
     ))}
 
