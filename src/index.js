@@ -1,9 +1,7 @@
-// eslint-disable-next-line
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-// eslint-disable-next-line
-import App from './App';
+// import './styles/styles.sass';
+import App from './components/App';
 
 ReactDOM.render(
   <React.StrictMode>
