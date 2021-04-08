@@ -1,29 +1,29 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  if (typeof numberOne !== 'number' || typeof numberTwo !== 'number' || !operation) return '0';
-  const nOne = Big(Number(numberOne));
-  const nTwo = Big(Number(numberTwo));
-  let r = 0;
+  if (!numberOne || !numberTwo || !operation) return '0';
+  const nOne = typeof number1 !== 'number' ? Big(Number(numberOne)) : Big(numberOne);
+  const nTwo = typeof number2 !== 'number' ? Big(Number(numberTwo)) : Big(numberTwo);
+  let result = 0;
 
   switch (operation) {
     case '+':
-      r = nOne.plus(nTwo);
+      result = nOne.plus(nTwo);
       break;
     case '-':
-      r = nOne.minus(nTwo);
+      result = nOne.minus(nTwo);
       break;
     case 'x':
-      r = nOne.times(nTwo);
+      result = nOne.times(nTwo);
       break;
     case '÷':
-      r = nOne.div(nTwo).toFixed(1);
+      result = nOne.div(nTwo).toFixed(1);
       break;
     default:
-      r = 0;
+      result = 0;
       break;
   }
-  return r.toString();
+  return result.toString();
 };
 
 export default operate;
