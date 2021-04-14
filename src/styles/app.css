@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
+.app{
+    width: 100%;
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.display{
+    background-color: gray;
+    height: 100px;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 2rem;
+    font-size: 2rem;
+}
+
+.panel{
+
+}
+.panel .row{
+    height: 100px;
+    display: flex;
+}
+
+.panel .row .button{
+    width: 25%;
+    cursor: pointer;
+    color: #000;
+    background-color: #f5903e;
+    border: 1px solid #333;
+}
+
+.panel .row .button.white{
+    background: #fff;
+}
+
+.panel .row .button.wide{
+    width: 50%;
+}
