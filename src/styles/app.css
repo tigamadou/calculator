@@ -59,10 +59,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
 }
 
 .panel .row .button.white {
   background: #fff;
+  font-size: 1rem;
 }
 
 .panel .row .button.wide {
