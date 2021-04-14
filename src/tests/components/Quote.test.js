@@ -3,8 +3,8 @@ import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import Quotes from '../../components/Quote';
 
-describe('Quotes', () => {
-  test('renders Quotes component ', () => {
+describe('Quotes Component Tests', () => {
+  test('It should renders ', () => {
     render(<Quotes />);
     // eslint-disable-next-line no-unused-expressions
     expect(screen.getByText('William Paul Thurston')).toBeInTheDocument;
