@@ -1,49 +1,32 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from 'react-router-dom';
-import Home from './Home';
-import Calculator from './Calculator';
-import Quote from './Quote';
+import React, { useState } from 'react';
 
-export default function App() {
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
+import Calculate from '../logic/calculate';
+
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: '',
+    next: '',
+    operation: null,
+  });
+
+  const handleClick = (buttonName) => {
+    const newState = Calculate(state, buttonName);
+    setState({ ...newState });
+  };
+
   return (
-    <Router>
-      <div className="app">
-        <header className="header">
-          <div className="pageTitle">
-            Math Magicians
-          </div>
-          <nav className="navbar">
-            <ul className="navbarMenu">
-              <li className="navbarItem">
-                <Link to="/">Home</Link>
-              </li>
-              <li className="navbarItem">
-                <Link to="/calculator">Calculator</Link>
-              </li>
-              <li className="navbarItem">
-                <Link to="/quote">Quote</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
-        <Switch>
-          <Route path="/calculator">
-            <Calculator />
-          </Route>
-          <Route path="/quote">
-            <Quote />
-          </Route>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-        </Switch>
+    <div className="calculatorPage">
+      <div>
+        <h2>Let’s do some math!</h2>
       </div>
-    </Router>
+      <div className="calculatorApp">
+
+        <Display result={(state.next && state.next.toString()) || (state.total && state.total.toString()) || '0'} />
+        <ButtonPanel handleClick={handleClick} />
+      </div>
+    </div>
   );
-}
+};
+export default Calculator;
