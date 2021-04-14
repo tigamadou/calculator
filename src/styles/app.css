@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+html,body{
+  height: 100%;
+  margin: 0px;
+}
 body {
   background-color: #f9f9f9;
   font-family: 'Libre Baskerville', serif;
   padding-bottom: 60px;
+
+  background-image: linear-gradient(to top, #f3eedf 0%, white 100%);
+
+
+
+
 }
 
 * {
   box-sizing: border-box;
 }
-
+button:focus {outline:0;}
 .app {
   width: 100%;
   width: 900px;
@@ -60,6 +69,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  
 }
 
 .panel .row .button.white {
@@ -89,17 +99,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 100px;
   margin-bottom: 60px;
   background-color: #fff;
   padding: 16px 32px;
   border-radius: 30px;
+  box-shadow: 0 0 10px #f1f1f1, 0px 45px 30px -50px #dbdbdb;
+  height: 80px;
 }
 
 .pageTitle {
   font-size: 3rem;
   font-weight: 800;
-  color: #f5903e;
+  background-color: #f5903e;
+  color: #fff;
+  text-shadow: 0px 0px 1px #fff;
+  height: 150px;
+  padding: 0px 32px;
   font-family: 'Pacifico', cursive;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .navbarMenu {
@@ -127,7 +149,7 @@ body {
   border-radius: 60px;
   overflow: hidden;
   border: 1px solid #f9f9f9;
-  box-shadow: 0 0 5px #f9f9f9, 0 5px 15px #f1f1f1;
+  box-shadow: 0 0 5px #f9f9f9, 0 15px 40px -20px #dbdbdb;
   background-color: #fff;
 }
 
@@ -135,7 +157,7 @@ body {
   background-color: #fff;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 0 5px #f9f9f9, 0 5px 15px #f1f1f1;
+  box-shadow: 0 0 5px #f9f9f9, 0 15px 40px -20px #dbdbdb;
   line-height: 1.5rem;
 }
 

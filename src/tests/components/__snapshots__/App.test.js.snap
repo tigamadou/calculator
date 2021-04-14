@@ -23,174 +23,155 @@ exports[`App should match with snapshot 1`] = `
       <div
         className="row"
       >
-        <div
-          aria-hidden="true"
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           AC
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           +/-
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           %
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           ÷
-        </div>
+        </button>
       </div>
       <div
         className="row"
       >
-        <div
-          aria-hidden="true"
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           7
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           8
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           9
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           x
-        </div>
+        </button>
       </div>
       <div
         className="row"
       >
-        <div
-          aria-hidden="true"
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           4
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           5
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           6
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           -
-        </div>
+        </button>
       </div>
       <div
         className="row"
       >
-        <div
-          aria-hidden="true"
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           1
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           2
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           3
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           +
-        </div>
+        </button>
       </div>
       <div
         className="row"
       >
-        <div
-          aria-hidden="true"
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           0
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           .
-        </div>
-        <div
-          aria-hidden="true"
+        </button>
+        <button
           className="button"
           onClick={[Function]}
-          role="button"
+          type="button"
         >
           =
-        </div>
+        </button>
       </div>
     </div>
   </div>
