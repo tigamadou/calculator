@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import App from '../../components/App';
 
-describe('App', () => {
+describe('App component tests', () => {
   test('renders App component ', () => {
     render(<App />);
     // eslint-disable-next-line no-unused-expressions
