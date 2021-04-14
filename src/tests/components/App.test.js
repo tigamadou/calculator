@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import { BrowserRouter } from 'react-router-dom';
 import App from '../../components/App';
 
 describe('App component tests', () => {
@@ -12,11 +11,7 @@ describe('App component tests', () => {
   });
   test('should match with snapshot', () => {
     const tree = renderer
-      .create(
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>,
-      )
+      .create(<App />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
