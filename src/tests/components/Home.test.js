@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-
 import Home from '../../components/Home';
 
 describe('Home component tests', () => {
