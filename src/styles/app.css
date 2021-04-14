@@ -1,52 +1,143 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-*{
-    box-sizing: border-box;
-}
-.app{
-    width: 100%;
-    width: 700px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-.display{
-    background-color: gray;
-    height: 100px;
-    width: 100%;
-    color: #fff;
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px 2rem;
-    font-size: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Libre Baskerville', serif;
+  padding-bottom: 60px;
 }
 
-.panel{
-
-}
-.panel .row{
-    height: 100px;
-    display: flex;
+* {
+  box-sizing: border-box;
 }
 
-.panel .row .button{
-    width: 25%;
-    cursor: pointer;
-    color: #000;
-    background-color: #f5903e;
-    border: 1px solid #333;
+.app {
+  width: 100%;
+  width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.panel .row .button.white{
-    background: #fff;
+.text-primary {
+  color: #f5903e;
 }
 
-.panel .row .button.wide{
-    width: 50%;
+.display {
+  background-color: gray;
+  height: 100px;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+.panel {
+  padding: 16px;
+}
+
+.panel .row {
+  display: flex;
+}
+
+.panel .row .button {
+  width: 100px;
+  height: 92px;
+  cursor: pointer;
+  color: #000;
+  background-color: #f5903e;
+  border: none;
+  transition: all 0.25s ease-in-out;
+  border-radius: 50%;
+  margin: 6px;
+  box-shadow: 0 0 5px #f9f9f9, 0 5px 5px #f1f1f1;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel .row .button.white {
+  background: #fff;
+}
+
+.panel .row .button.wide {
+  width: 50%;
+  border-radius: 30px;
+}
+
+.panel .row .button:hover {
+  background-color: #f3ab70;
+  box-shadow: 0 0 5px #f9f9f9, 0 5px 15px #f1f1f1;
+  transform: scale(1.1);
+}
+
+.panel .row .button:active {
+  box-shadow: 0 15px 15px #f1f1f1;
+  transform: scale(1);
+  background-color: #fff;
+  color: #f5903e;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  background-color: #fff;
+  padding: 16px 32px;
+  border-radius: 30px;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #f5903e;
+  font-family: 'Pacifico', cursive;
+}
+
+.navbarMenu {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbarItem a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #000;
+  font-weight: 700;
+}
+
+.calculatorPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculatorApp {
+  width: 432px;
+  border-radius: 60px;
+  overflow: hidden;
+  border: 1px solid #f9f9f9;
+  box-shadow: 0 0 5px #f9f9f9, 0 5px 15px #f1f1f1;
+  background-color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 5px #f9f9f9, 0 5px 15px #f1f1f1;
+  line-height: 1.5rem;
+}
+
+.quote {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }

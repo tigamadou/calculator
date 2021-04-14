@@ -17,9 +17,9 @@ const Button = ({
     setButtonClass(btnclass);
   }, []);
   return (
-    <button className={buttonClass} type="button" onClick={() => handleClick(name)}>
+    <div aria-hidden="true" role="button" className={buttonClass} onClick={() => handleClick(name)}>
       {name}
-    </button>
+    </div>
   );
 };
 
