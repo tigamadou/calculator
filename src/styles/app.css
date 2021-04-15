@@ -1,25 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-html,body{
+
+html,
+body {
   height: 100%;
-  margin: 0px;
+  margin: 0;
 }
+
 body {
   background-color: #f9f9f9;
   font-family: 'Libre Baskerville', serif;
   padding-bottom: 60px;
-
   background-image: linear-gradient(to top, #f3eedf 0%, white 100%);
-
-
-
-
 }
 
 * {
   box-sizing: border-box;
 }
-button:focus {outline:0;}
+button:focus { outline: 0; }
+
 .app {
   width: 100%;
   width: 900px;
@@ -69,7 +68,6 @@ button:focus {outline:0;}
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  
 }
 
 .panel .row .button.white {
@@ -104,7 +102,7 @@ button:focus {outline:0;}
   background-color: #fff;
   padding: 16px 32px;
   border-radius: 30px;
-  box-shadow: 0 0 10px #f1f1f1, 0px 45px 30px -50px #dbdbdb;
+  box-shadow: 0 0 10px #f1f1f1, 0 45px 30px -50px #dbdbdb;
   height: 80px;
 }
 
@@ -113,15 +111,14 @@ button:focus {outline:0;}
   font-weight: 800;
   background-color: #f5903e;
   color: #fff;
-  text-shadow: 0px 0px 1px #fff;
+  text-shadow: 0 0 1px #fff;
   height: 150px;
-  padding: 0px 32px;
+  padding: 0 32px;
   font-family: 'Pacifico', cursive;
   margin-top: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .navbarMenu {
