@@ -1,4 +1,3 @@
-# Todo App
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -13,7 +12,7 @@
 <br />
 <p align="center">
   
-  <h3 align="center">Calculator</h3>
+  <h1 align="center">Calculator</h1>
 
   <p align="center">
     A simple calculator app built with React 
