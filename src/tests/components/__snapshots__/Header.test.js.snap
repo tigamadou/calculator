@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component tests Header should match with snapshot 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="pageTitle"
+  >
+    Math Magicians
+  </div>
+  <nav
+    className="navbar"
+  >
+    <ul
+      className="navbarMenu"
+    >
+      <li
+        className="navbarItem"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="navbarItem"
+      >
+        <a
+          href="/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li
+        className="navbarItem"
+      >
+        <a
+          href="/quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
