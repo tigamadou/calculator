@@ -26,12 +26,12 @@ const ButtonPanel = ({ handleClick }) => (
   </div>
 );
 
-ButtonPanel.propTypes = {
-  handleClick: PropTypes.func,
-};
-
 ButtonPanel.defaultProps = {
   handleClick: null,
+};
+
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func,
 };
 
 export default ButtonPanel;
